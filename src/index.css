@@ -1,10 +1,21 @@
 body {
   margin: 0;
+  width: 98vw;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
  
 a {
   list-style: none;
   color: black;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
  
 button,
@@ -33,7 +44,7 @@ nav {
   color: white;
   padding: 0px 20px;
   box-shadow: 0px 1px 2px gray;
-  width: 100%;
+  width: 98vw;
   margin-bottom: 15px;
   padding: 5px;
 }
@@ -87,4 +98,27 @@ nav li {
  
 .LoginPage {
   background-color: #94a7c8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+}
+
+#add-sock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#preview {
+  height: 8vh
+}
+
+#all-socks {
+  width: 60vw;
+  margin: 0;
 }

@@ -4,7 +4,7 @@ import { AuthContext } from "../context/auth.context";
  
 function Navbar() {
 
-    const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
+    const { user, logOutUser } = useContext(AuthContext);
 
     const getToken = () => {
         return localStorage.getItem('authToken')
@@ -15,9 +15,16 @@ function Navbar() {
       <Link to="/">
         <button>Home</button>
       </Link>
+
+      <Link to="/all-socks">
+        <button>See Socks</button>
+      </Link>
  
       {getToken() && (
-        <>      
+        <>
+        <Link to="/add-sock">
+            <button>List Sock</button>
+        </Link>      
           <button onClick={logOutUser}>Logout</button>
           <span>{user && user.name}</span>
         </>

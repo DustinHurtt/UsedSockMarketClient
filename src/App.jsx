@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import SignupPage from "./pages/SignUpPage";
 import LoginPage from "./pages/LoginPage";
+import AllSocks from "./pages/AllSocks";
+import AddSock from "./pages/AddSock";
+import EditSock from "./pages/EditSock";
+import SockDetails from "./pages/SockDetails";
  
 function App() {
 
@@ -26,9 +30,13 @@ function App() {
  
       <Routes>      
         <Route path="/" element={ <HomePage /> } />
+        <Route path="/all-socks" element={ <AllSocks />} />
+        <Route path="/sock-details/:sockId" element={<SockDetails />} />
 
         <Route element={<LoggedIn />}>
 
+          <Route path="/add-sock" element={<AddSock />} />
+          <Route path="/edit-sock/:sockId" element={<EditSock />} />
 
         </Route>
 
