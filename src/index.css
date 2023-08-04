@@ -122,3 +122,7 @@ form {
   width: 60vw;
   margin: 0;
 }
+
+#sock-detail {
+  height: 50vh
+}

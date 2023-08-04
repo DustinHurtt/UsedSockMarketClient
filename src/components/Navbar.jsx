@@ -22,11 +22,17 @@ function Navbar() {
  
       {getToken() && (
         <>
-        <Link to="/add-sock">
-            <button>List Sock</button>
-        </Link>      
-          <button onClick={logOutUser}>Logout</button>
-          <span>{user && user.name}</span>
+            <Link to="/add-sock">
+                <button>List Sock</button>
+            </Link>
+            {user && 
+                <Link to='cart'>
+                    <button>See Cart</button>
+                </Link>  
+            }      
+                
+            <span>{user && <span>Welcome {user.username}!</span>}</span>
+            <button onClick={logOutUser}>Logout</button>
         </>
       )}
  

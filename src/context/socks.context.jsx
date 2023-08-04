@@ -24,7 +24,7 @@ const SockProvider = ({ children }) => {
     }
 
     return (
-        <SockContext.Provider value={{ socks, getSocks}}>
+        <SockContext.Provider value={{ socks, getSocks, setSocks}}>
             {children}
         </SockContext.Provider>
     )

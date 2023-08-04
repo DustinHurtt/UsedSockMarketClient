@@ -8,6 +8,7 @@ import AllSocks from "./pages/AllSocks";
 import AddSock from "./pages/AddSock";
 import EditSock from "./pages/EditSock";
 import SockDetails from "./pages/SockDetails";
+import Cart from "./pages/Cart";
  
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
 
           <Route path="/add-sock" element={<AddSock />} />
           <Route path="/edit-sock/:sockId" element={<EditSock />} />
+          <Route path="/cart" element={<Cart />} />
 
         </Route>
 
@@ -53,3 +55,6 @@ function App() {
   );
 }
 export default App;
+
+
+
